@@ -1,0 +1,56 @@
+# -- Theme Options --
+colorScheme = "blowfish"
+defaultAppearance = "light"
+autoSwitchAppearance = true
+
+enableA11y = false
+enableSearch = true
+enableCodeCopy = true
+enableStructuredBreadcrumbs = true
+
+mainSections = ["posts"]
+
+[header]
+  layout = "basic"
+
+[footer]
+  showMenu = true
+  showCopyright = true
+  showThemeAttribution = false
+  showAppearanceSwitcher = true
+  showScrollToTop = true
+
+[homepage]
+  layout = "profile"
+  showRecent = true
+  showRecentItems = 10
+  showMoreLink = true
+  showMoreLinkDest = "/posts/"
+  cardView = false
+
+[article]
+  showDate = true
+  showAuthor = true
+  showHero = true
+  heroStyle = "basic"
+  showReadingTime = true
+  showTableOfContents = true
+  showTaxonomies = true
+  showCategories = true
+  showTags = true
+  showWordCount = true
+
+[list]
+  showHero = false
+  showSummary = true
+  showCards = false
+  groupByYear = true
+
+[taxonomy]
+  showTermCount = true
+  showHero = false
+
+[term]
+  showHero = false
+  showTableOfContents = true
+  groupByYear = false

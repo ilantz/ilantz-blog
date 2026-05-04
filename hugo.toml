@@ -1,0 +1,3 @@
+baseURL = 'https://www.ilantz.com/'
+locale = 'en-us'
+title = 'Ilantz’s Weblog'

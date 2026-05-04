@@ -1,0 +1,23 @@
+disabled = false
+locale = "en"
+label = "English"
+weight = 1
+title = "Ilantz's Weblog"
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  description = "mostly IT related ramblings"
+  copyright = "© 2026 Ilantz"
+
+[params.author]
+  name = "Ilan Lanz"
+  image = "img/ilantz.png"
+  headline = "IT Systems Architect // Cybersecurity Marketer // Techno-Trance Producer // Family man."
+  bio = "I'm primarily focused on Microsoft related services and software, with a wide foundation around IT infrastructures, security, automation and troubleshooting."
+  links = [
+    { github = "https://github.com/ilantz" },
+    { linkedin = "https://www.linkedin.com/in/ilantz" },
+  ]

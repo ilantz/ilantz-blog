@@ -1,0 +1,25 @@
+# Hugo
+public/
+resources/_gen/
+assets/jsconfig.json
+hugo_stats.json
+.hugo_build.lock
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (if used)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Other
+.cache/
+
+# Antigravity / AI
+.gemini/
+
+# Theme artifacts
+themes/blowfish/exampleSite/
