@@ -1,8 +1,8 @@
 ---
-title: 432-4-3-2 STOREDRV and Store Driver throttling
+title: 432-4.3.2 STOREDRV and Store Driver throttling
 date: 2011-04-10
 aliases:
-- /2011/04/10/432-4.3.2-storedrv-and-store-driver-throttling/
+- /2011/04/10/432-4-3-2-storedrv-and-store-driver-throttling/
 categories:
 - exchange-2010
 showTableOfContents: true
