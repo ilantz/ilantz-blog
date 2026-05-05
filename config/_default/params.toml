@@ -30,7 +30,7 @@ mainSections = ["posts"]
 
 [article]
   showDate = true
-  showAuthor = false
+  showAuthor = true
   showHero = true
   heroStyle = "basic"
   showReadingTime = true
