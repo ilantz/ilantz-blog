@@ -23,3 +23,6 @@ yarn-error.log*
 
 # Theme artifacts
 themes/blowfish/exampleSite/
+
+# Drafts
+drafts/

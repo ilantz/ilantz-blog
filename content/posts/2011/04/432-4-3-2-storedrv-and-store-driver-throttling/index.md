@@ -1,5 +1,5 @@
 ---
-title: 432-4.3.2 STOREDRV and Store Driver throttling
+title: 432-4-3-2 STOREDRV and Store Driver throttling
 date: 2011-04-10
 categories:
 - exchange-2010
