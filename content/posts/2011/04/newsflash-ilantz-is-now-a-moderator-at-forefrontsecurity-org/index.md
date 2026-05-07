@@ -5,7 +5,9 @@ categories:
 - misc
 showTableOfContents: true
 draft: false
+slug: newsflash-ilantz-is-now-a-moderator-at-forefrontsecurity-org
 ---
+
 
 
 Hey !

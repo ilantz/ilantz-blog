@@ -6,7 +6,9 @@ categories:
 - office-365
 showTableOfContents: true
 draft: false
+slug: office-365-migration-batch-error-failed-to-overwrite-the-existing-migration-job-item-found-for-userdomain-com
 ---
+
 
 
 Hi Again,

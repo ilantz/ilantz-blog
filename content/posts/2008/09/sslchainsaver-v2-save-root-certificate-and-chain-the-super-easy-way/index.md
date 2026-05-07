@@ -5,7 +5,9 @@ categories:
 - pki
 showTableOfContents: true
 draft: false
+slug: sslchainsaver-v2-save-root-certificate-and-chain-the-super-easy-way
 ---
+
 
 
 {{< lead >}}

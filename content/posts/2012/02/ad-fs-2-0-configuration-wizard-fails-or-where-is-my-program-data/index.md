@@ -6,7 +6,9 @@ categories:
 - office-365
 showTableOfContents: true
 draft: false
+slug: ad-fs-2-0-configuration-wizard-fails-or-where-is-my-program-data
 ---
+
 
 
 Hi Again,

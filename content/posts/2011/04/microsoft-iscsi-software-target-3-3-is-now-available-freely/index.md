@@ -6,7 +6,9 @@ categories:
 - server-2008-r2
 showTableOfContents: true
 draft: false
+slug: microsoft-iscsi-software-target-3-3-is-now-available-freely
 ---
+
 
 
 {{< lead >}}

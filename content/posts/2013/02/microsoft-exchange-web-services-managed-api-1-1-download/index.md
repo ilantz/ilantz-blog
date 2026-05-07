@@ -7,7 +7,9 @@ categories:
 - misc
 showTableOfContents: true
 draft: false
+slug: microsoft-exchange-web-services-managed-api-1-1-download
 ---
+
 
 
 Hi All,
