@@ -1,6 +1,7 @@
 ---
 title: Edit ISA / TMG login form - Easily !
 date: 2010-02-13
+slug: edit-isa-tmg-login-form-easily
 categories:
 - forefront-isatmg
 showTableOfContents: true

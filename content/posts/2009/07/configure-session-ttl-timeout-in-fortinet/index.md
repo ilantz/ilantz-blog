@@ -1,6 +1,7 @@
 ---
 title: Configure Session TTL / Timeout in Fortinet
 date: 2009-07-23
+slug: configure-session-ttl-timeout-in-fortinet
 categories:
 - exchange-2003
 - exchange-2007

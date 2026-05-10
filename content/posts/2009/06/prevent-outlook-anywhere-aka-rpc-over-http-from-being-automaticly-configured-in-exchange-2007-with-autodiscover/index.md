@@ -2,6 +2,9 @@
 title: Prevent Outlook Anywhere (aka RPC over HTTP) from being automatically configured
   in Exchange 2007 with autodiscover
 date: 2009-06-18
+slug: prevent-outlook-anywhere-aka-rpc-over-http-from-being-automatically-configured-in-exchange-2007-with-autodiscover
+aliases:
+  - /2009/06/18/prevent-outlook-anywhere-aka-rpc-over-http-from-being-automaticly-configured-in-exchange-2007-with-autodiscover/
 categories:
 - exchange-2007
 - exchange-2010

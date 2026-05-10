@@ -1,6 +1,7 @@
 ---
 title: Enable sata AHCI / RAID (ICH8/ICH8R/ICH9/ICH9R/ICH10)
 date: 2008-10-21
+slug: enable-sata-ahci-raid-ich8ich8rich9ich9rich10
 categories:
 - misc
 showTableOfContents: true

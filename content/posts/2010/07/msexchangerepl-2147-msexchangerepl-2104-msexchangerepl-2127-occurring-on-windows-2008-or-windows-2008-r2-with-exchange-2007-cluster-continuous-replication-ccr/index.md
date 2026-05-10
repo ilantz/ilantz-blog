@@ -3,6 +3,7 @@ title: MSExchangeRepl 2147 / MSExchangeRepl 2104 / MSExchangeRepl 2127 occurring
   Windows 2008 or Windows 2008 R2 with Exchange 2007 Cluster Continuous Replication
   (CCR)
 date: 2010-07-12
+slug: msexchangerepl-2147-msexchangerepl-2104-msexchangerepl-2127-occurring-on-windows-2008-or-windows-2008-r2-with-exchange-2007-cluster-continuous-replication-ccr
 categories:
 - exchange-2007
 - exchange-2010

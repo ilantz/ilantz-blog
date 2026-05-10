@@ -2,6 +2,7 @@
 title: Authentication pop ups and annoyances with Exchange 2007 / 2010 and Outlook
   Anywhere
 date: 2011-02-08
+slug: authentication-pop-ups-and-annoyances-with-exchange-2007-2010-and-outlook-anywhere
 categories:
 - exchange-2007
 - exchange-2010

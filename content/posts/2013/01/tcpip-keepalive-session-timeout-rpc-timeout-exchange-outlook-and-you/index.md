@@ -1,6 +1,7 @@
 ---
 title: TCP/IP KeepAlive, Session Timeout, RPC Timeout, Exchange, Outlook and you
 date: 2013-01-14
+slug: tcpip-keepalive-session-timeout-rpc-timeout-exchange-outlook-and-you
 categories:
 - exchange-2003
 - exchange-2007
