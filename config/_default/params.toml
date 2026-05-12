@@ -1,6 +1,6 @@
 # -- Theme Options --
 colorScheme = "blowfish"
-defaultAppearance = "light"
+defaultAppearance = "dark"
 autoSwitchAppearance = true
 
 enableA11y = false
