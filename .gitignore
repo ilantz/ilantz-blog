@@ -1,5 +1,6 @@
 # Hugo
 public/
+out/
 resources/_gen/
 assets/jsconfig.json
 hugo_stats.json
@@ -26,3 +27,7 @@ themes/blowfish/exampleSite/
 
 # Drafts
 drafts/
+
+# Front Matter CMS
+.frontmatter/
+frontmatter.json

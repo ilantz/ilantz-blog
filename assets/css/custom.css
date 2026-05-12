@@ -1,0 +1,17 @@
+:root {
+  /* The official Slate-50 background */
+  --color-neutral-50: 248, 250, 252; 
+  
+  /* Setting the header tint to match the background (removes the blue tint) */
+  --color-primary-200: 248, 250, 252; 
+}
+
+/* Applying the background precisely */
+body {
+  background-color: rgb(var(--color-neutral-50)) !important;
+}
+
+/* Ensuring dark mode remains unaffected */
+html.dark body {
+  background-color: #111827 !important;
+}

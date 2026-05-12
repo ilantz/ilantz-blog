@@ -1,0 +1,23 @@
+[[mounts]]
+  source = "content"
+  target = "content"
+
+[[mounts]]
+  source = "static"
+  target = "static"
+
+[[mounts]]
+  source = "layouts"
+  target = "layouts"
+
+[[mounts]]
+  source = "assets"
+  target = "assets"
+
+[[mounts]]
+  source = "data"
+  target = "data"
+
+[[mounts]]
+  source = "drafts"
+  target = "content/posts"

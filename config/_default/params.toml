@@ -11,19 +11,19 @@ enableStructuredBreadcrumbs = true
 mainSections = ["posts"]
 
 [header]
-  layout = "basic"
+  layout = "fixed-fill-blur"
 
 [footer]
   showMenu = true
   showCopyright = true
-  showThemeAttribution = false
+  showThemeAttribution = true
   showAppearanceSwitcher = true
   showScrollToTop = true
 
 [homepage]
   layout = "profile"
   showRecent = true
-  showRecentItems = 10
+  showRecentItems = 3
   showMoreLink = true
   showMoreLinkDest = "/posts/"
   cardView = false
