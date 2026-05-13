@@ -19,10 +19,12 @@ With more and more virtual servers and less and less physical servers being depl
 
 BUT ! if you forget to select the "High Performance" power option in Windows Server for example, you could end up with:
 
-[![e5-2690v2 at half speed](images/e5-2690v2-at-half-speed-300x206.png)](images/e5-2690v2-at-half-speed.png)
+{{< figure src="images/e5-2690v2-at-half-speed.png" alt="e5-2690v2 at half speed" caption="e5-2690v2 at half speed" >}}
 
 Notice that the speed of the CPU is less the half the speed it can run at. now to make things better, just make sure to select the "preferred" settings for your busy server:
 
-[![e5-2690v2 at full speed](images/e5-2690v2-at-full-speed-271x300.png)](images/e5-2690v2-at-full-speed.png)
+{{< figure src="images/e5-2690v2-at-full-speed.png" alt="e5-2690v2 at full speed" caption="e5-2690v2 at full speed" >}}
 
 Just a heads up for all you folks out there, the default "Balanced" option caused a performance issue with an Exchange 2013 server that was running on this physical hardware and once the option was changed - all was back to normal :)
+
+ilantz

@@ -30,7 +30,7 @@ So I've tried to reproduce the test manually using the same command in the setup
 
 Then I've noticed that the CN was "default" with lower "d" ... although the Where-Object and -eq should be case insensitive, the check failed...
 
-[![get-owamailboxpolicy before the change - default](images/get-owamailboxpolicy-before-300x65.png)](images/get-owamailboxpolicy-before.png)
+{{< figure src="images/get-owamailboxpolicy-before.png" alt="get-owamailboxpolicy before the change - default" caption="get-owamailboxpolicy before the change - default" >}}
 
 So, I've modified the value to be "Default" with capital "D":
 
@@ -38,6 +38,8 @@ So, I've modified the value to be "Default" with capital "D":
 Set-OwaMailboxPolicy -Identity default -Name Default
 ```
 
-[![get-owamailboxpolicy after the change](images/get-owamailboxpolicy-after-300x55.png)](images/get-owamailboxpolicy-after.png)
+{{< figure src="images/get-owamailboxpolicy-after.png" alt="get-owamailboxpolicy after the change" caption="get-owamailboxpolicy after the change" >}}
 
 that did the trick :) and the setup.exe /PrepareAD was successful.
+
+ilantz

@@ -24,7 +24,7 @@ The MSILOG indeed showed that the setup was looking for the RTM language files i
 So, I've turned to manually remove any references to the Client / Server language packs on the server, this included removing a whole bunch of registry keys:
 
 ```text
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v14\Language Packs\ <-- the whole KEY HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\  <-- Whatever "Microsoft Exchange ** Language Pack" I found HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\  <-- Whatever "Microsoft Exchange ** Language Pack" I found HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products  <-- Whatever "Microsoft Exchange ** Language Pack" I found
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v14\Language Packs\ <-- the whole KEY HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\  <-- Whatever "Microsoft Exchange ** Language Pack" I found HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\  <-- Whatever "Microsoft Exchange ** Language Pack" I found HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products  <-- Whatever "Microsoft Exchange ** Language Pack" I found
 ```
 
 Following this brutal way, I've stumbled upon a way to [Applying Small Updates by Reinstalling the Product](https://msdn.microsoft.com/en-us/library/aa367575\(v=vs.85\).aspx) this actually achieves what the installer wants:
@@ -50,3 +50,5 @@ Additional references:
 http://stackoverflow.com/a/7916340 - credit for the `REINSTALLMODE=vomus` trick
 
 [How to restore the missing Windows Installer cache files and resolve problems that occur during a SQL Server update - kb 969052](https://support.microsoft.com/en-us/kb/969052)
+
+ilantz

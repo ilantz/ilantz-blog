@@ -23,11 +23,11 @@ To follow my excitement, here are the highlights of from the TechNet topic - [Wh
 
 ### Hybrid Configuration Wizard
 
-Exchange 2010 SP2 introduces the Hybrid Configuration Wizard which provides you with a streamlined process to configure a hybrid deployment between on-premises and Office 365 Exchange organizations. Hybrid deployments provide the seamless look and feel of a single Exchange organization and offer administrators the ability to extend the feature-rich experience and administrative control of an on-premises organization to the cloud. For more information, see [Understanding the Hybrid Configuration Wizard](http://technet.microsoft.com/en-us/library/hh529921.aspx).
+Exchange 2010 SP2 introduces the Hybrid Configuration Wizard which provides you with a streamlined process to configure a hybrid deployment between on-premises and Office 365 Exchange organizations. Hybrid deployments provide the seamless look and feel of a single Exchange organization and offer administrators the ability to extend the feature-rich experience and administrative control of an on-premises organization to the cloud. For more information, see [Understanding the Hybrid Configuration Wizard](http://technet.microsoft.com/en-us/library/hh529921.aspx).
 
 Address Book Policies
 
-Exchange 2010 SP2 introduces the address book policy object which can be assigned to a mailbox user. The ABP determines the global address list (GAL), offline address book (OAB), room list, and address lists that are visible to the mailbox user that is assigned the policy. Address book policies provide a simpler mechanism to accomplish GAL separation for the on-premises organization that needs to run disparate GALs. For more information, see [Understanding Address Book Policies](http://technet.microsoft.com/en-us/library/hh529948.aspx).
+Exchange 2010 SP2 introduces the address book policy object which can be assigned to a mailbox user. The ABP determines the global address list (GAL), offline address book (OAB), room list, and address lists that are visible to the mailbox user that is assigned the policy. Address book policies provide a simpler mechanism to accomplish GAL separation for the on-premises organization that needs to run disparate GALs. For more information, see [Understanding Address Book Policies](http://technet.microsoft.com/en-us/library/hh529948.aspx).
 
 ### Cross-Site Silent Redirection for Outlook Web App
 

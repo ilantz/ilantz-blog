@@ -31,3 +31,5 @@ And if we are on the subject, it's also a good practice to make sure the followi
 
 - You do not have Autodiscover related registry settings also - [http://support.microsoft.com/kb/2212902](http://support.microsoft.com/kb/2212902 "http://support.microsoft.com/kb/2212902") - Unexpected Autodiscover behavior when you have registry settings under the \\Autodiscover key
 - Make sure that the "Encrypt data between Microsoft Office Outlook and Microsoft Exchange Server" option under account settings of the Outlook Profile is indeed selected. Office 365 is restricting clients to encrypt MAPI traffic - see the following KB for additional information (originally written for Exchange 2010 RTM) - [http://support.microsoft.com/kb/2006508](http://support.microsoft.com/kb/2006508 "http://support.microsoft.com/kb/2006508")
+
+ilantz

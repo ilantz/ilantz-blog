@@ -38,7 +38,7 @@ Only after a more furious search I've stumbled upon the following "hidden" magic
 
 Restarted the Hub Transport service, waited a few seconds and... here's the result:
 
-[![Hub-Transport-Throttling-Disabled](images/hub-transport-throttling-disabled.png "Hub-Transport-Throttling-Disabled")](images/hub-transport-throttling-disabled.png)
+{{< figure src="images/hub-transport-throttling-disabled.png" alt="Hub-Transport-Throttling-Disabled" caption="Hub-Transport-Throttling-Disabled" >}}
 
 :)
 

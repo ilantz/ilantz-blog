@@ -43,3 +43,5 @@ Get the script here - [http://gallery.technet.microsoft.com/Office-365-Add-Excha
 1.3 - Updated with server-side filtering to get all relevant users for better efficiency, an updated logging mechanism and using now the PrimarySmtpAddress prefix value for the routing address.
 
 Enjoy !
+
+ilantz

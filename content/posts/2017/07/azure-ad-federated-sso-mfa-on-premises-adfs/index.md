@@ -43,7 +43,7 @@ See more here - [https://docs.microsoft.com/en-us/azure/active-directory/active-
 Set-MsolDomainFederationSettings -DomainName <name.com> -PromptLoginBehavior Disabled
 ```
 
-See more here -  [https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/operations/ad-fs-prompt-login](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/operations/ad-fs-prompt-login)
+See more here -  [https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/operations/ad-fs-prompt-login](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/operations/ad-fs-prompt-login)
 
 Note that for ADFS 2012 R2, the July 2016 update rollup is required for this parameter to work.
 
@@ -62,3 +62,5 @@ c:[Type == "http://schemas.microsoft.com/claims/authnmethodsreferences"] => issu
 ```
 
 This rule will effectively add all your users a static "fake" claim which states they have performed Multi Factor successfully.
+
+ilantz

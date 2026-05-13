@@ -53,7 +53,7 @@ Start Clicking !
 
 **Win + “+”:**\- Zoom in Desktop (Full Screen) - This is by far the best addition for windows desktop on my part.
 
-**Win + “-”:**\- Zoom out Desktop (Full Screen) -  "-"
+**Win + “-”:**\- Zoom out Desktop (Full Screen) -  "-"
 
 **Win + 1-9 :**\- Launch Pinned Applications on Taskbar by their locations
 

@@ -20,11 +20,11 @@ Missing or corrupt virtual directories with Exchange are common and can be easil
 
 Exchange Server setup creates each virtual directory in the AD forest configuration partition under services, microsoft Exchange, administrative groups, administration group name, server name, protocols, http, virtual server name (usually 1).
 
-In this case, both ActiveSync and OMA virtual directories were missing from Active Directory and as a result were also missing from the System Manager MMC, so performing a Repair Setup or the Reset virtual directories method will render useless.. both will not **write** anything new to the AD.. we had to re-create the two virtual directories both in AD and the IIS, so using System Manager, we try to create a new virtual directory, but the ActiveSync and OMA is greyed out !
+In this case, both ActiveSync and OMA virtual directories were missing from Active Directory and as a result were also missing from the System Manager MMC, so performing a Repair Setup or the Reset virtual directories method will render useless.. both will not **write** anything new to the AD.. we had to re-create the two virtual directories both in AD and the IIS, so using System Manager, we try to create a new virtual directory, but the ActiveSync and OMA is greyed out !
 
-[![Microsoft-Server-ActiveSync and  OMA Missing From Active Directory](images/microsoft-server-activesync-and-oma-missing-from-active-directory-300x190.png)](images/microsoft-server-activesync-and-oma-missing-from-active-directory.png)
+{{< figure src="images/microsoft-server-activesync-and-oma-missing-from-active-directory.png" alt="Microsoft-Server-ActiveSync and  OMA Missing From Active Directory" caption="Microsoft-Server-ActiveSync and  OMA Missing From Active Directory" >}}
 
-[![Creating New Virtual Directory With System Manager Grayed out](images/creating-new-virtual-directories-with-system-manager-grayed-out-300x175.png "Creating New Virtual Directory With System Manager Grayed out")](images/creating-new-virtual-directories-with-system-manager-grayed-out.png)
+{{< figure src="images/creating-new-virtual-directories-with-system-manager-grayed-out.png" alt="Creating New Virtual Directory With System Manager Grayed out" caption="Creating New Virtual Directory With System Manager Grayed out" >}}
 
 With some searching I've reached a solution that worked perfectly (dated back to 2007 from the Microsoft Exchange newsgroup), this will enable the options within the System Manager and allow us to re-create the virtual directories and restore order :)
 
@@ -35,3 +35,5 @@ With some searching I've reached a solution that worked perfectly (dated back to
 Credits - [http://microsoft.newsgroups.archived.at/public.exchange.setup/200702/07021815421.html](http://microsoft.newsgroups.archived.at/public.exchange.setup/200702/07021815421.html "http://microsoft.newsgroups.archived.at/public.exchange.setup/200702/07021815421.html")
 
 I hope this helps anyone struggling with this,
+
+Ilantz

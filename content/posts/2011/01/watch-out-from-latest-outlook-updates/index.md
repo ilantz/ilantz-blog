@@ -20,4 +20,6 @@ Microsoft has released the updated [http://support.microsoft.com/kb/2412171](htt
 
 I'd advice to stay away from these updates until all is clear.
 
-**Update -** [Office 2007 Cumulative Update for February 2011 is now released](http://ilantz.com/2011/03/01/office-2007-cumulative-update-for-february-2011-is-now-released/ "Office 2007 Cumulative Update for February 2011 is now released")
+**Update -** [Office 2007 Cumulative Update for February 2011 is now released](http://ilantz.com/2011/03/01/office-2007-cumulative-update-for-february-2011-is-now-released/ "Office 2007 Cumulative Update for February 2011 is now released")
+
+Ilantz

@@ -16,7 +16,7 @@ draft: false
 
 
 {{< lead >}}
-**Update June 21th, 2016** **-** following feedback and a (true golden) blog post by the Exchange Team - Checklist for troubleshooting Outlook connectivity in Exchange 2013 and 2016 (on-premises) I've updated the recommended values for the timeout settings, and shortened the article overall for better reading. Do read the post in general, and in topic - check the CAS & Load Balancer configuration paragraphs.
+**Update June 21th, 2016** **-** following feedback and a (true golden) blog post by the Exchange Team - Checklist for troubleshooting Outlook connectivity in Exchange 2013 and 2016 (on-premises) I've updated the recommended values for the timeout settings, and shortened the article overall for better reading. Do read the post in general, and in topic - check the CAS & Load Balancer configuration paragraphs.
 {{< /lead >}}
 
 * * *

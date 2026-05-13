@@ -28,3 +28,5 @@ The script will try to find an exact match of the country value, although - case
 grab it here: [http://gallery.technet.microsoft.com/office/Setting-Office-365-Usage-4d685175](http://gallery.technet.microsoft.com/office/Setting-Office-365-Usage-4d685175)
 
 Please share your comments if you have any, I would love hearing this script is being used.
+
+ilantz

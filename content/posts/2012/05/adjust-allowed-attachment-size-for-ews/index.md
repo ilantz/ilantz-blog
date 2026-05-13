@@ -28,6 +28,8 @@ Following the Microsoft reference on the subject: [Set Message Size Limits for E
 
 **Notes:**
 
-maxAllowedContentLenght value is entered as Bytes, calculate 50MB Base64 encoded size: =((1024\*50)\*1024)\*4/3 maxRequestLenght value is entered as Kilo Bytes, calculate 50MB =1024\*50
+maxAllowedContentLenght value is entered as Bytes, calculate 50MB Base64 encoded size: =((1024\*50)\*1024)\*4/3 maxRequestLenght value is entered as Kilo Bytes, calculate 50MB =1024\*50
 
-Hope this post  helped you
+Hope this post  helped you
+
+ilantz

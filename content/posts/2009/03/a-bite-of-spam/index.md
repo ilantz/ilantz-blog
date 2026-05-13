@@ -12,7 +12,7 @@ draft: false
 Thought I should post this to share some info and maybe even provide a simple FAQ and some basic info on how to fight the world's true evil.
 {{< /lead >}}
 
-unsolicited bulk e-mail messages...   SPAM
+unsolicited bulk e-mail messages...   SPAM
 
 for start if you want some background and some basic info on what/how/why and such..i would reference you to [spamfaq.net (archive)](http://www.lumbercartel.ca/archives/spamfaq.net/) , once you are familiar with some basics terms and such, you would probably want to start and impalement (if not already) some anti-spam methods , either choose a 3rd party application for this, an hardware based relay all-in-on solution etc..
 

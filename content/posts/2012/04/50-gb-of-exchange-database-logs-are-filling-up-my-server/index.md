@@ -16,17 +16,17 @@ Hey again,
 Today I wanted to share with you another field report regarding a troubleshooting case I've had with Exchange 2010.
 {{< /lead >}}
 
-A while back in 2009 I've re-posted a blog post from the Exchange Team Blog- [Troubleshooting Exchange 2003 and 2007 Store Log/Database growth issues](http://ilantz.com/2009/07/18/troubleshooting-exchange-2003-and-2007-store-logdatabase-growth-issues/ "http://ilantz.com/2009/07/18/troubleshooting-exchange-2003-and-2007-store-logdatabase-growth-issues/") - it included a link to [Mike Lagase](http://blogs.technet.com/b/mikelag/ "http://blogs.technet.com/b/mikelag/")'s blog and massive troubleshooting guide on this matter.
+A while back in 2009 I've re-posted a blog post from the Exchange Team Blog- [Troubleshooting Exchange 2003 and 2007 Store Log/Database growth issues](http://ilantz.com/2009/07/18/troubleshooting-exchange-2003-and-2007-store-logdatabase-growth-issues/ "http://ilantz.com/2009/07/18/troubleshooting-exchange-2003-and-2007-store-logdatabase-growth-issues/") - it included a link to [Mike Lagase](http://blogs.technet.com/b/mikelag/ "http://blogs.technet.com/b/mikelag/")'s blog and massive troubleshooting guide on this matter.
 
 This week I've been called to help with an Exchange server 2010 that was creating tremendous amounts of log files for a specific database, with regards to the blog post I've mentioned, ExMon - Exchange Server User Monitor came to the rescue, real fast.
 
 Fired it up with an interval of 15 minutes, and located the user that is responsible for the issue, note the screen shot, sorting by "Log Bytes" the top user created **800 MB in 15 minutes !!**
 
-[![ExMon Screen Shot - Log Bytes Winner](images/log-bytes-winner.png "ExMon Screen Shot - Log Bytes Winner")](images/log-bytes-winner.png)
+{{< figure src="images/log-bytes-winner.png" alt="ExMon Screen Shot - Log Bytes Winner" caption="ExMon Screen Shot - Log Bytes Winner" >}}
 
- 
+ 
 
- 
+ 
 
 From this point forward it was easy to solve this issue, disabling both MAPI And Active Sync feature for the user, and detected the cause.
 

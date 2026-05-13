@@ -11,7 +11,7 @@ draft: false
 Hey Again !
 
 {{< lead >}}
-I've blogged in the past about this issue - [Certificate autoenrollment fails with RPC server is unavailable](http://ilantz.com/2010/03/16/certificate-autoenrollment-fails-with-rpc-server-is-unavailable/ "Certificate autoenrollment fails with RPC server is unavailable") , but following a session today, we've encountered a new situation when trying to Auto-Enroll certificates, also with manual enrollment using MMC. The error code was **0x800706ba** -  The RPC server is unavailable
+I've blogged in the past about this issue - [Certificate autoenrollment fails with RPC server is unavailable](http://ilantz.com/2010/03/16/certificate-autoenrollment-fails-with-rpc-server-is-unavailable/ "Certificate autoenrollment fails with RPC server is unavailable") , but following a session today, we've encountered a new situation when trying to Auto-Enroll certificates, also with manual enrollment using MMC. The error code was **0x800706ba** -  The RPC server is unavailable
 {{< /lead >}}
 
 If you read my previous blog, you'll see I've explained a situation with Auto-Enrollment on domain controllers when the CA is installed on a DC. Solution was actually adding the "Domain Controllers" security group to the CERTSVC_DCOM_ACCESS security group, but what happens when the CERTSVC_DCOM_ACCESS was deleted ?

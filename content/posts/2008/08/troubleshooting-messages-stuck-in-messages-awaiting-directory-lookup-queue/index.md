@@ -18,7 +18,7 @@ Internal Messages from Server A in ExchangeORG A , were failing in the categoriz
 
 Following [kb884996](http://support.microsoft.com/kb/884996) , resolution 2 was valid in my situation, **Allow inheritable permissions from parent to propagate to this object** check box on Server A object, was missing a Tick..
 
-I set this via ADSIEDIT , noticed of course that the "Exchange Domain Servers" ACE entries , from the other domain were added,  and allowed for replication.
+I set this via ADSIEDIT , noticed of course that the "Exchange Domain Servers" ACE entries , from the other domain were added,  and allowed for replication.
 
 After verifying that the ACE's were propegated & fully replicated, I did a quick restart to MTA, Routing & SMTP services on both servers , and operation was succesfully restored.
 

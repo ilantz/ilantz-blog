@@ -25,7 +25,7 @@ Hi Again !
 
 I often get calls and questions regarding backups and Exchange Server, since ever this issue is not always working as required or as you would expect, but that's off-topic :)
 
-One of the most common stories is that without a working Exchange Server backup when  you perform massive mailbox moves, transaction logs will get piled and fill up the volume or disk that they reside in. and then panic starts, "hey my databases were dismounted..." then of course the administrator realizes that the space on the log drive or volume has indeed ran out and now he needs to figure out what to delete.. and here's where this post comes in...
+One of the most common stories is that without a working Exchange Server backup when  you perform massive mailbox moves, transaction logs will get piled and fill up the volume or disk that they reside in. and then panic starts, "hey my databases were dismounted..." then of course the administrator realizes that the space on the log drive or volume has indeed ran out and now he needs to figure out what to delete.. and here's where this post comes in...
 
 So how can you delete or purge Exchange server logs without any risk ? well, in simple - **you cannot**, because the whole idea of restoring an Exchange or for this matter any transactional database requires you to have a first - "full" backup of the database itself and **all** transaction logs that were generated since the the date of the database creation date, or the last "successful" "full backup".
 
@@ -50,26 +50,28 @@ This example will show you how to purge the logs for a database that is located 
 
 Here's some screenshots from the process:
 
-[![Diskshadow commands for the example](images/diskshadow.png "Diskshadow Commands")](images/diskshadow.png)
+{{< figure src="images/diskshadow.png" alt="Diskshadow commands for the example" caption="Diskshadow commands for the example" >}}
 
 The Diskshadow example screenshot.
 
-[![ESE Event ID 2005](images/ese-event-id-2005.png "ESE Event ID 2005")](images/ese-event-id-2005.png)
+{{< figure src="images/ese-event-id-2005.png" alt="ESE Event ID 2005" caption="ESE Event ID 2005" >}}
 
 ESE - Event ID 2005 - Starting a Full Shadow Copy Backup
 
-[![MSExchangeIS Event ID 9811](images/msexchangeis-event-id-9811.png "MSExchangeIS Event ID 9811")](images/msexchangeis-event-id-9811.png)
+{{< figure src="images/msexchangeis-event-id-9811.png" alt="MSExchangeIS Event ID 9811" caption="MSExchangeIS Event ID 9811" >}}
 
 MSexchangeIS - Exchange VSS Writer preparation.
 
-[![ESE Event ID 224 - Logs being Purged](images/ese-event-id-224.png "ESE Event ID 224 - Logs being Purged")](images/ese-event-id-224.png)
+{{< figure src="images/ese-event-id-224.png" alt="ESE Event ID 224 - Logs being Purged" caption="ESE Event ID 224 - Logs being Purged" >}}
 
 ESE Event ID 224 - Logs are now purged :)
 
-[![MSExchangeIS Event ID 9780 - Backup complete](images/msexchangeis-event-id-9780.png "MSExchangeIS Event ID 9780 - Backup complete")](images/msexchangeis-event-id-9780.png)
+{{< figure src="images/msexchangeis-event-id-9780.png" alt="MSExchangeIS Event ID 9780 - Backup complete" caption="MSExchangeIS Event ID 9780 - Backup complete" >}}
 
 MSExchangeIS Event ID 9780 - Backup is now complete.
 
 **side note:** although this example was tested against Exchange 2010, it should work just as fine with Exchange 2013 & 2007.
 
 Hope this helps you !
+
+ilantz

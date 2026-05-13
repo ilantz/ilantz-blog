@@ -13,7 +13,7 @@ draft: false
 I was asked to figure this out, took me a while but i found quite a nice approach to make it super easy.
 {{< /lead >}}
 
-[The official Technet on the matter](http://technet.microsoft.com/en-us/library/cc767102.aspx),  explains the how to phrase the stssync link correctly , after fighting with it..unicode etc.. i finally though of something easy.
+[The official Technet on the matter](http://technet.microsoft.com/en-us/library/cc767102.aspx),  explains the how to phrase the stssync link correctly , after fighting with it..unicode etc.. i finally though of something easy.
 
 1\. Locate the list you want to connect to.
 

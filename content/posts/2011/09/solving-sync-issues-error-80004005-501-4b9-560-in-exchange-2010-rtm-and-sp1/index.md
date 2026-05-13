@@ -22,7 +22,7 @@ See [Synchronization of an organizational forms library fails when you use Outlo
 
 Hello Everyone,
 
-Since the first migrations of Exchange 2003 to Exchange 2010 we've seen a really annoying error within Outlook 2003, 2007 and Outlook 2010 when trying to De-commission  legacy servers, specifically when moving all public folders replicas including the EFORMS REGISTRY system folder and it's children folders. once the organizational forms ( respectively you might see a different folder name within your organizatino ) is replicated **only** to the Exchange 2010 - a log / error message will be created in the _**Sync Issues**_ upon an Outlook Send/Receive operation:
+Since the first migrations of Exchange 2003 to Exchange 2010 we've seen a really annoying error within Outlook 2003, 2007 and Outlook 2010 when trying to De-commission  legacy servers, specifically when moving all public folders replicas including the EFORMS REGISTRY system folder and it's children folders. once the organizational forms ( respectively you might see a different folder name within your organizatino ) is replicated **only** to the Exchange 2010 - a log / error message will be created in the _**Sync Issues**_ upon an Outlook Send/Receive operation:
 
 > 11:56:54 Synchronizing Forms 11:56:54 Downloading from server 'public folder server' 11:56:54 Error synchronizing folder 11:56:54 [80004005-501-4B9-560] 11:56:54 The client operation failed. 11:56:54 Microsoft Exchange Information Store
 

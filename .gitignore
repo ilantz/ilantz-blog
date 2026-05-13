@@ -28,6 +28,9 @@ themes/blowfish/exampleSite/
 # Drafts
 drafts/
 
+# Backups
+backups/
+
 # Front Matter CMS
 .frontmatter/
 frontmatter.json

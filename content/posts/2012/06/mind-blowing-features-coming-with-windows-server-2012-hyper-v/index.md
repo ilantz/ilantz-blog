@@ -17,7 +17,7 @@ Just take a look at tables below for a comparison between 2008 R2 and 2012 RC Hy
 
 **Processor and Memory Support**
 
-| **Processor/Memory Feature** | **Windows Server 2008 R2** | **Windows Server  2012 Release Candidate** |
+| **Processor/Memory Feature** | **Windows Server 2008 R2** | **Windows Server  2012 Release Candidate** |
 | --- | --- | --- |
 | **Logical processors on hardware** | 64 | 320 |
 | **Physical memory** | 1 TB | 4 TB |
@@ -30,7 +30,7 @@ Just take a look at tables below for a comparison between 2008 R2 and 2012 RC Hy
 
 **Network**
 
-| **Network Feature** | **Windows Server 2008 R2** | **Windows Server  2012 Release Candidate** |
+| **Network Feature** | **Windows Server 2008 R2** | **Windows Server  2012 Release Candidate** |
 | --- | --- | --- |
 | **NIC Teaming** | Yes, through partners | Yes, Windows NIC teaming in box |
 | **VLAN Tagging** | Yes | Yes |
@@ -45,7 +45,7 @@ Just take a look at tables below for a comparison between 2008 R2 and 2012 RC Hy
 
 **Storage**
 
-| **Storage Feature** | **Windows Server 2008 R2** | **Windows Server  2012 Release Candidate** |
+| **Storage Feature** | **Windows Server 2008 R2** | **Windows Server  2012 Release Candidate** |
 | --- | --- | --- |
 | **Live storage migration** | No, quick storage migration through System  Center Virtual Machine Manager | Yes, with no limits (as many as the hardware will allow) |
 | **Virtual machines on file storage** | No | Yes, Server Message Block 3.0 (SMB3) |
@@ -59,7 +59,7 @@ Just take a look at tables below for a comparison between 2008 R2 and 2012 RC Hy
 
 **Manageability**
 
-| **Manageability Feature** | **Windows Server 2008 R2** | **Windows Server  2012 Release Candidate** |
+| **Manageability Feature** | **Windows Server 2008 R2** | **Windows Server  2012 Release Candidate** |
 | --- | --- | --- |
 | **Hyper-V PowerShell** | No | Yes |
 | **Network PowerShell** | No | Yes |

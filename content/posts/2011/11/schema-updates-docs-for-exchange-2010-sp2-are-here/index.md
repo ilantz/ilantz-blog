@@ -40,3 +40,5 @@ Quoting Michal smith's blog, here's some key points to mention:
 Read on: [A Somewhat Detailed Look at Exchange 2010 Service Pack 2 Schema Changes](http://theessentialexchange.com/blogs/michael/archive/2011/11/06/a-somewhat-detailed-look-at-exchange-2010-service-pack-2-schema-changes.aspx)
 
 Have a great weekend!
+
+ilantz

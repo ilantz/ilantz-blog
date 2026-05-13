@@ -12,7 +12,7 @@ draft: false
 I was requested to do this the other day.. so I use the amazing [MFCMAPI](http://www.codeplex.com/MFCMAPI) tool which opens wide mailboxes and thier raw content..
 {{< /lead >}}
 
-**Be aware that i am  really deleting an appointment ! the reminder will be gone with it. (Thanks for Steve for correcting me here.)**
+**Be aware that i am  really deleting an appointment ! the reminder will be gone with it. (Thanks for Steve for correcting me here.)**
 
 to do so we have a few steps:
 

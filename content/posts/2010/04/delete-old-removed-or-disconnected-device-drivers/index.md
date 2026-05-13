@@ -22,10 +22,10 @@ You open device management, and click , view "show hidden devices"... but you **
 
 FIX - Show **all** disconnected devices, open System Properties, click Environment Variables and click to add a New System Variable.
 
-[![Configure a New System Variable](images/configure.png "Configure a New System Variable")](images/configure.png)
+{{< figure src="images/configure.png" alt="Configure a New System Variable" caption="Configure a New System Variable" >}}
 
 After this you will be able to launch Device Manager again and when you'll click to Show Hidden Devices, you **will** see all those removed or disconnected device drivers !
 
-[![Device Manger Before-After](images/before-after.png "Device Manger Before-After")](images/before-after.png)
+{{< figure src="images/before-after.png" alt="Device Manger Before-After" caption="Device Manger Before-After" >}}
 
 That's it ! Enjoy

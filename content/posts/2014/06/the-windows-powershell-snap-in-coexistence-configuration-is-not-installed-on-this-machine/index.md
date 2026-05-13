@@ -29,7 +29,7 @@ To initiate a synchronization locally or remotely (if enabled) , you could run t
 Invoke-Command -ComputerName **DirSync-Server.domain.com** -ScriptBlock {& "C:\Program Files\Microsoft Azure AD Sync\Bin\DirectorySyncClientCmd.exe"}
 ```
 
-If you're looking also to force a full password sync to Azure AD , visit this page - [How to Use PowerShell to Trigger a Full Password Sync in Azure AD Sync](http://social.technet.microsoft.com/wiki/contents/articles/28433.how-to-use-powershell-to-trigger-a-full-password-sync-in-azure-ad-sync.aspx)
+If you're looking also to force a full password sync to Azure AD , visit this page - [How to Use PowerShell to Trigger a Full Password Sync in Azure AD Sync](http://social.technet.microsoft.com/wiki/contents/articles/28433.how-to-use-powershell-to-trigger-a-full-password-sync-in-azure-ad-sync.aspx)
 
 * * *
 
@@ -37,6 +37,6 @@ Just noticed now that the new build of Windows Azure Directory Synchronization T
 
 So if you've trying to use the known way to force a synchronization with DirSync, use these PowerShell commands to achieve what you were used to. `Import-Module DirSync Start-OnlineCoexistenceSync`
 
-[![import-module-dirsync](images/import-module-dirsync-300x126.png)](images/import-module-dirsync.png)
+{{< figure src="images/import-module-dirsync.png" alt="import-module-dirsync" caption="import-module-dirsync" >}}
 
 enjoy !

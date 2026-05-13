@@ -40,3 +40,5 @@ Get-MigrationUser -Identity User@Domain.com | Remove-MigrationUser
 Once removed, you can resume the migration again and it should now sync correctly your mailboxes.
 
 Hope this helps !
+
+ilantz

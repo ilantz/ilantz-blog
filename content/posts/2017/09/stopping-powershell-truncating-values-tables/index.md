@@ -17,7 +17,11 @@ I've just stumbled upon this within the scripting guy blog, and I felt I must (r
 Don't we all hate it when values are displayed and being truncated with "..." ?
 
 ```powershell
-PS C:\> Get-Service -Name winmgmt | ft name, DependentServices -AutoSize Name    DependentServices ----    ----------------- winmgmt {wscsvc, vmms, SUService, SharedAccess**...**}
+PS C:\> Get-Service -Name winmgmt | ft name, DependentServices -AutoSize
+
+Name    DependentServices
+----    -----------------
+winmgmt {wscsvc, vmms, SUService, SharedAccess...}
 ```
 
 It turns out that the system variable **$FormatEnumerationLimit** is controlling this behavior and there's a way to properly eliminate these. the article suggests setting to "4" but "-1" will be also a good option.

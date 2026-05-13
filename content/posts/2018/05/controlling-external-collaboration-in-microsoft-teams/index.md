@@ -19,7 +19,7 @@ Most organizations are required these days to enable collaboration solutions and
 
 In this post I'll be specific to Office 365 Group resources, with Microsoft Teams as an example, you should be aware that [each Team in Microsoft Teams corresponds to an Office 365 group](https://docs.microsoft.com/en-us/microsoftteams/office-365-groups).
 
-A common ask is **"We wish to enable only named people to join as a guest to our Teams, we don't want anyone from the organization to invite anyone they like - we need to control this with an internal workflow."**  to satisfy this request, we will use native capabilities within Azure Active Directory and Office 365 to enable group owners to add **existing** external guests to their team/office 365 group. In addition, we will enable **only specific people** in the organization with the permission **to create and add new guests accounts** to the directory.
+A common ask is **"We wish to enable only named people to join as a guest to our Teams, we don't want anyone from the organization to invite anyone they like - we need to control this with an internal workflow."**  to satisfy this request, we will use native capabilities within Azure Active Directory and Office 365 to enable group owners to add **existing** external guests to their team/office 365 group. In addition, we will enable **only specific people** in the organization with the permission **to create and add new guests accounts** to the directory.
 
 {{< alert icon="circle-info" >}}
 **Note:** This is the basic example, this can be adapted to more complex workflows of approval/automation to make this more customized to a specific requirement.

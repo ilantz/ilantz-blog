@@ -25,3 +25,5 @@ Anyway - grab it here: [Microsoft Exchange Web Services Managed API 1.1](images/
 Hope this helps.
 
 Exchange Web Service Managed API 1.1, Download - Microsoft ( **Non** working download links) : [www.microsoft.com/en-us/download/details.aspx?id=13480](http://www.microsoft.com/en-us/download/details.aspx?id=13480) [http://www.microsoft.com/downloads/en/details.aspx?FamilyID=c3342fb3-fbcc-4127-becf-872c746840e1](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=c3342fb3-fbcc-4127-becf-872c746840e1)
+
+ilantz

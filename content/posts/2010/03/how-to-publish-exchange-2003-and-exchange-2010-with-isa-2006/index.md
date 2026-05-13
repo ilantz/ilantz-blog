@@ -38,34 +38,34 @@ Okay here we go:
 1. Configure redirection for Exchange 2003 OWA: Exchange 2010 will redirect a user that holds a mailbox in exchange 2003, this will be possible when the following cmdlet will be run on the Exchange 2010 Client Access server: `Get-OwaVirtualDirectory -server cas01-2010 | Set-OwaVirtualDirectory -Exchange2003Url https://owa.ext.com/exchange`
 2. Publish Exchange 2010 client access web farm with ISA 2006, OWA first:
 
-[![New OWA 2010 Publishing Rule](images/1-new-rule-owa.png "New OWA 2010 Publishing Rule")](images/1-new-rule-owa.png) [![Outlook Web Access Publishing](images/2-rule-owa.png "Outlook Web Access Publishing")](images/2-rule-owa.png)
+{{< figure src="images/1-new-rule-owa.png" alt="New OWA 2010 Publishing Rule" caption="New OWA 2010 Publishing Rule" >}} {{< figure src="images/2-rule-owa.png" alt="Outlook Web Access Publishing" caption="Outlook Web Access Publishing" >}}
 
 \- Notice ISA 2006 does not provide a wizard (or the new form) for OWA 2010 - for that you need TMG
 
-[![](images/3-farm-publish.png "Publish 2010 Client Access Farm")](images/3-farm-publish.png) [![](images/4-bridge-options-to-cas-servers.png "Choose SSL bridging options to CAS farm")](images/4-bridge-options-to-cas-servers.png)
+{{< figure src="images/3-farm-publish.png" alt="Publish 2010 Client Access Farm" caption="Publish 2010 Client Access Farm" >}} {{< figure src="images/4-bridge-options-to-cas-servers.png" alt="Choose SSL bridging options to CAS farm" caption="Choose SSL bridging options to CAS farm" >}}
 
-[![](images/5-to-farm-2010.png "Enter one of the CAS server internal name")](images/5-to-farm-2010.png)
+{{< figure src="images/5-to-farm-2010.png" alt="Enter one of the CAS server internal name" caption="Enter one of the CAS server internal name" >}}
 
 \- Now we need to create the Web Farm and select it as the target for the publishing rule
 
-[![](images/6-newfarm.png "Name the new Web Farm")](images/6-newfarm.png) [![](images/7-farm-connectivity-verification.png "Choose Web Farm connectivity verification method")](images/7-farm-connectivity-verification.png)
+{{< figure src="images/6-newfarm.png" alt="Name the new Web Farm" caption="Name the new Web Farm" >}} {{< figure src="images/7-farm-connectivity-verification.png" alt="Choose Web Farm connectivity verification method" caption="Choose Web Farm connectivity verification method" >}}
 
- [![](images/8-confirm-isa-system-rule-for-verification.png "Confirm isa system rule for verification")](images/8-confirm-isa-system-rule-for-verification.png)[![](images/9-select-the-farm.png "Select the created Web Farm")](images/9-select-the-farm.png)
+ {{< figure src="images/8-confirm-isa-system-rule-for-verification.png" alt="Confirm isa system rule for verification" caption="Confirm isa system rule for verification" >}}{{< figure src="images/9-select-the-farm.png" alt="Select the created Web Farm" caption="Select the created Web Farm" >}}
 
 \- Configure the web listener and authentication delegation option
 
 \- The web listener should be already configured for Form Authentication and a valid SSL certificate
 
-[![](images/10-public-name-for-rule.png "Enter the Public DNS name for the rule")](images/10-public-name-for-rule.png) [![](images/11-listerner.png "Select the Listener ( should be already configured for 2003 publishing )")](images/11-listerner.png)
+{{< figure src="images/10-public-name-for-rule.png" alt="Enter the Public DNS name for the rule" caption="Enter the Public DNS name for the rule" >}} {{< figure src="images/11-listerner.png" alt="Select the Listener ( should be already configured for 2003 publishing )" caption="Select the Listener ( should be already configured for 2003 publishing )" >}}
 
-[![](images/12-delegation.png "Select Basic Authentication for Credentials Delegation")](images/12-delegation.png) [![](images/13-user-sets.png "Leave All Authenticated Users for Web Publishing ( ISA authenticates our users )")](images/13-user-sets.png)
+{{< figure src="images/12-delegation.png" alt="Select Basic Authentication for Credentials Delegation" caption="Select Basic Authentication for Credentials Delegation" >}} {{< figure src="images/13-user-sets.png" alt="Leave All Authenticated Users for Web Publishing ( ISA authenticates our users )" caption="Leave All Authenticated Users for Web Publishing ( ISA authenticates our users )" >}}
 
 \- The publishing rule for the Web Farm is now complete.
 
 \- Two additional configurations are now required:
 
-1. Edit the new "exchange2010" Rule: **Remove** the legacy virtual directory's - /Exchange, /Exchweb and /Public they will continue to be published to your original 2003 rule. **Add** /ecp/\* as this is the new "options" applications for users, and a powerful administration web console with Exchange 2010. [![](images/14-edit-owa-rule.png "Edit the new rule - remove all OWA 2003 vdir's")](images/14-edit-owa-rule.png)
-2. Edit the original OWA 2003 publishing rule and remove Microsoft-Server-ActiveSync path, we will next create ActiveSync publishing rule for Exchange 2010. [![](images/15-edit-owa-2003-rule.png "Edit the original OWA 2003 publishing rule and remove Microsoft-Server-ActiveSync vdir")](images/15-edit-owa-2003-rule.png)
+1. Edit the new "exchange2010" Rule: **Remove** the legacy virtual directory's - /Exchange, /Exchweb and /Public they will continue to be published to your original 2003 rule. **Add** /ecp/\* as this is the new "options" applications for users, and a powerful administration web console with Exchange 2010. {{< figure src="images/14-edit-owa-rule.png" alt="Edit the new rule - remove all OWA 2003 vdir's" caption="Edit the new rule - remove all OWA 2003 vdir's" >}}
+2. Edit the original OWA 2003 publishing rule and remove Microsoft-Server-ActiveSync path, we will next create ActiveSync publishing rule for Exchange 2010. {{< figure src="images/15-edit-owa-2003-rule.png" alt="Edit the original OWA 2003 publishing rule and remove Microsoft-Server-ActiveSync vdir" caption="Edit the original OWA 2003 publishing rule and remove Microsoft-Server-ActiveSync vdir" >}}
 
 Now we have three last steps to finish our Exchange 2010 publishing:
 

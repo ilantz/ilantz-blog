@@ -21,9 +21,9 @@ all seems to be working great , except that when it all came to start testing co
 
 using the new CAS servers to replace the frontend servers things went bad.
 
-i've had error 500 when accessing 2007 mailboxes with /exchange,  404 errors when accessing /exchange and using 2003 Mailboxes.
+i've had error 500 when accessing 2007 mailboxes with /exchange,  404 errors when accessing /exchange and using 2003 Mailboxes.
 
-also , event id 1000 , with source EPROX was logged in the CAS application log,  the description doesn't make much sense..except that it wrote the Backend cluster 2003 name.. " The description for Event ID 1000 from source EXPROX cannot be found. Either the component that raises this event is not installed on your local computer or the installation is corrupted. You can install or repair the component on the local computer. " If the event originated on another computer, the display information had to be saved with the event. The following information was included with the event: CLUSTER
+also , event id 1000 , with source EPROX was logged in the CAS application log,  the description doesn't make much sense..except that it wrote the Backend cluster 2003 name.. " The description for Event ID 1000 from source EXPROX cannot be found. Either the component that raises this event is not installed on your local computer or the installation is corrupted. You can install or repair the component on the local computer. " If the event originated on another computer, the display information had to be saved with the event. The following information was included with the event: CLUSTER
 
 Solving.. :)
 

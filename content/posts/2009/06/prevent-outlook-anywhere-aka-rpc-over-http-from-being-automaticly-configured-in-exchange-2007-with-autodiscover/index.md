@@ -40,7 +40,7 @@ The Outlook provider setting and autodiscover relation are referenced quite good
 
 [http://msexchangeteam.com/archive/2008/09/26/449908.aspx](http://msexchangeteam.com/archive/2008/09/26/449908.aspx)
 
-A client of mine needed the possibility to disable the automatic propagation of the  "Connect to Microsoft Exchange using HTTP" setting in an Exchange 2007 environment . he did of course wanted to keep the ability to connect using "Outlook Anywhere"  if desired when configuring that manually.
+A client of mine needed the possibility to disable the automatic propagation of the  "Connect to Microsoft Exchange using HTTP" setting in an Exchange 2007 environment . he did of course wanted to keep the ability to connect using "Outlook Anywhere"  if desired when configuring that manually.
 
 Because autodiscover was made to auto-configure clients that are inside & outside the corporate network disabling this feature disables the ability for external outlook clients, that not domain joined to automatically connect using “Outlook Anywhere” . it does, however does not affect the configuration of a profile.
 
@@ -50,7 +50,7 @@ This solution will keep the outlook clients from automatically propagate the set
 
 Updates (Thanks for all commentators)
 
-- I've written another article related on the subject, highly recommended reading: [Authentication pop ups and annoyances with Exchange 2007 / 2010 and Outlook Anywhere](http://ilantz.com/2011/02/08/authentication-pop-ups-and-annoyances-with-exchange-2007-2010-and-outlook-anywhere/ "Authentication pop ups and annoyances with Exchange 2007 / 2010 and Outlook Anywhere")
+- I've written another article related on the subject, highly recommended reading: [Authentication pop ups and annoyances with Exchange 2007 / 2010 and Outlook Anywhere](http://ilantz.com/2011/02/08/authentication-pop-ups-and-annoyances-with-exchange-2007-2010-and-outlook-anywhere/ "Authentication pop ups and annoyances with Exchange 2007 / 2010 and Outlook Anywhere")
 - The above applies also for Exchange 2010
 - To restore the EXPR provider, run the following:
 

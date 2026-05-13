@@ -37,8 +37,10 @@ You can read more about Dynamic Group Membership here:
 
 You can also assign licenses with the following methods:
 
-1. Using the Office 365 Portal - like you would add Office 365 licenses.  This was made available late 2015 - [http://blogs.technet.com/b/microsoftintune/archive/2015/09/01/intune-and-ems-subscriptions-now-available-in-the-office-365-portal.aspx](http://blogs.technet.com/b/microsoftintune/archive/2015/09/01/intune-and-ems-subscriptions-now-available-in-the-office-365-portal.aspx)
+1. Using the Office 365 Portal - like you would add Office 365 licenses.  This was made available late 2015 - [http://blogs.technet.com/b/microsoftintune/archive/2015/09/01/intune-and-ems-subscriptions-now-available-in-the-office-365-portal.aspx](http://blogs.technet.com/b/microsoftintune/archive/2015/09/01/intune-and-ems-subscriptions-now-available-in-the-office-365-portal.aspx)
 2. Using Azure AD PowerShell - [http://blogs.technet.com/b/treycarlee/archive/2013/11/01/list-of-powershell-licensing-sku-s-for-office-365.aspx](http://blogs.technet.com/b/treycarlee/archive/2013/11/01/list-of-powershell-licensing-sku-s-for-office-365.aspx) ,you can use the following example to assign EMS licenses (with all options) **only** to users with an Office 365 E3 license: `$EMSSKU = (Get-MsolAccountSku | ? { $_.AccountSkuID -like "*:EMS"})[0].accountSkuId Get-MsolUser -All | ? { $_.licenses.accountsku.SkuPartNumber -eq "ENTERPRISEPACK"} | Set-MsolUserLicense -AddLicenses $EMSSKU`
 3. Azure AD Graph API - [https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/users-operations#FunctionsandactionsonusersAssignalicensetoauser](https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/users-operations#FunctionsandactionsonusersAssignalicensetoauser)
 
 Enjoy
+
+ilantz

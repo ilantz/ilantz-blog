@@ -18,6 +18,6 @@ The NDR reported back the recipients tried to send the email to the public folde
 
 #550 5.2.0 STOREDRV.Deliver: The Microsoft Exchange Information Store service reported an error. The following information should help identify the cause of this error: "MapiExceptionNotAuthorized
 
-To resolve this i've added Read Permissions - Allow for the Exchange Servers  group, with inheritance to all child objects.
+To resolve this i've added Read Permissions - Allow for the Exchange Servers  group, with inheritance to all child objects.
 
 Hope this will be useful !

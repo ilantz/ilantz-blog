@@ -24,7 +24,21 @@ Anyhow:
 3. Change the SourceLevel node value from Warning ActivityTracing (the default) to Verbose ActivityTracing.
 
 ```text
-_<TraceSourceLine>_       _<Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key>_       _<Value xsi:type="TraceSource">_         _<SourceLevel>All</SourceLevel>_         _<Listeners>_           _<Listener>_             _<ListenerType>CircularTraceListener</ListenerType>_             _<SourceLevel>**Verbose ActivityTracing**</SourceLevel>_             _<FileSizeQuotaInBytes>10000000</FileSizeQuotaInBytes>_             _<FileName>Microsoft\Windows Intune Exchange Connector\Logs\Connector.svclog</FileName>_             _<FileQuota>30</FileQuota>_           _</Listener>_         _</Listeners>_       _</Value>_     _</TraceSourceLine>_
+<TraceSourceLine>
+  <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key>
+  <Value xsi:type="TraceSource">
+    <SourceLevel>All</SourceLevel>
+    <Listeners>
+      <Listener>
+        <ListenerType>CircularTraceListener</ListenerType>
+        <SourceLevel>Verbose ActivityTracing</SourceLevel>
+        <FileSizeQuotaInBytes>10000000</FileSizeQuotaInBytes>
+        <FileName>Microsoft\Windows Intune Exchange Connector\Logs\Connector.svclog</FileName>
+        <FileQuota>30</FileQuota>
+      </Listener>
+    </Listeners>
+  </Value>
+</TraceSourceLine>
 ```
 
 It is important to note that the ActivityTracing setting should remain or be included with ANY value that is set for the setting.

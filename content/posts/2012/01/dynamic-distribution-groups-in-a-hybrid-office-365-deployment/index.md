@@ -24,6 +24,8 @@ Most "All Company" distribution lists are Dynamic Distribution Groups AKA Query 
 
 Yeah, you will need to modify those groups now to have "Users with External e-mail addresses" also checked :)
 
-[![Enable Users With External E-Mail Addesses](images/enable-users-with-external-e-mail-addesses.jpg "Enable Users With External E-Mail Addesses")](images/enable-users-with-external-e-mail-addesses.jpg)
+{{< figure src="images/enable-users-with-external-e-mail-addesses.jpg" alt="Enable Users With External E-Mail Addesses" caption="Enable Users With External E-Mail Addesses" >}}
 
 Problem solved - Happy new year !
+
+ilantz

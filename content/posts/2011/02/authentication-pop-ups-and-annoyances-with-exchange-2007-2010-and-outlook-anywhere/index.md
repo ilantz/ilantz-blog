@@ -46,7 +46,7 @@ Here's what can go wrong in bullets because we have a few different issues that 
 
 So what's that MSSTD or Certificate Principle Name ? well it's a method Outlook can verify that the server you are connecting to indeed holds the correct SSL certificate subject name before sending credentials to.. well yeah it ain't that secure.
 
-[![Microsoft Exchange Proxy Settings](images/bpos-msstd.png "Microsoft Exchange Proxy Settings")](images/bpos-msstd.png)
+{{< figure src="images/bpos-msstd.png" alt="Microsoft Exchange Proxy Settings" caption="Microsoft Exchange Proxy Settings" >}}
 
 This setting is actually being configured automatically since Exchange 2007 and continue to be with Exchange 2010.
 
@@ -95,3 +95,5 @@ Credits (or links) :
 [Publishing Outlook Anywhere Using NTLM Authentication With Forefront TMG or Forefront UAG](http://www.microsoft.com/download/en/details.aspx?id=22723)
 
 [Exchange 2013 Outlook Anywhere Considerations](http://ilantz.com/2013/06/29/exchange-2013-outlook-anywhere-considerations/ "Exchange 2013 Outlook Anywhere Considerations")
+
+ilantz

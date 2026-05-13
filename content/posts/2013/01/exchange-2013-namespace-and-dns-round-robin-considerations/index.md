@@ -19,9 +19,9 @@ Exchange 2013 simplifies deployments and operations greatly with a load of new f
 
 With Exchange 2013 "Outlook clients no longer connect to a server fully qualified domain name (FQDN) as they’ve done in all previous versions of Exchange. Using Autodiscover, Outlook finds a new connection point made up of the user’s mailbox GUID + @ + the domain portion of the user’s primary SMTP address. This change makes it much less likely that users will see the dreaded message “Your administrator has made a change to your mailbox. Please restart.”. Only Outlook 2007 and later versions are supported with Exchange 2013" (Taken from the Exchange 2013 help file - page 46 - Client Access Server" See for your self:
 
-[![Mailbox GUID as server name](images/Mailbox-GUID-as-server-name-300x85.png "Mailbox GUID as server name")](images/Mailbox-GUID-as-server-name.png)
+{{< figure src="images/Mailbox-GUID-as-server-name.png" alt="Mailbox GUID as server name" caption="Mailbox GUID as server name" >}}
 
-[![Fetching Mailbox GUID Value From Powershell](images/Get-Mailbox-GUID-300x47.png "Fetching Mailbox GUID Value From Powershell")](images/Get-Mailbox-GUID.png)
+{{< figure src="images/Get-Mailbox-GUID.png" alt="Fetching Mailbox GUID Value From Powershell" caption="Fetching Mailbox GUID Value From Powershell" >}}
 
 So without a namespace dependency ( server name or a CAS array) that affects our site resilience procedure or fail-over things gets easy - our Mailbox GUID will always remains intact no matter which server is running. Moreover, Exchange 2013 now **restricts** all client traffic to HTTP using the RPC over HTTP component and relies on the infamous AutoDiscover mechanism to supply the client with the correct HTTP proxy server to use, that's why outlook 2003 is no longer supported... Just to be clear here, this means that all Outlook clients will use "Outlook Anywhere" within the internal network and outside it, if allowed of course. It is also worth mentioning that it is now possible to have a single "global" host name for internal clients using Outlook, Outlook Web App, ActiveSync, EWS etc.
 
