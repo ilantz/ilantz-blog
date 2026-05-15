@@ -3,13 +3,13 @@ title: MSExchangeRepl 2147 / MSExchangeRepl 2104 / MSExchangeRepl 2127 occurring
   Windows 2008 or Windows 2008 R2 with Exchange 2007 Cluster Continuous Replication
   (CCR)
 date: 2010-07-12
-slug: msexchangerepl-2147-msexchangerepl-2104-msexchangerepl-2127-occurring-on-windows-2008-or-windows-2008-r2-with-exchange-2007-cluster-continuous-replication-ccr
 categories:
 - exchange-2007
 - exchange-2010
 - server-2008-r2
 showTableOfContents: true
 draft: false
+slug: msexchangerepl-2147-msexchangerepl-2104-msexchangerepl-2127-occurring-on-windows-2008-or-windows-2008-r2-with-exchange-2007-cluster-continuous-replication-ccr
 ---
 
 
@@ -21,7 +21,7 @@ Seems the cause for these errors, are because SMBv2 introduces status caching in
 
 **So to fix it I've added these registry keys under :**
 
-```text
+```registry
 HKLM\System\CurrentControlSet\Services\Lanmanworkstation\Parameters 
 FileInfoCacheLifetime [DWORD] = 0 
 FileNotFoundCacheLifetime [DWORD] = 0 
@@ -31,12 +31,22 @@ DirectoryCacheLifetime [DWORD] = 0
 My errors on the server were:
 
 ```text
-Event ID : 2147 Raw Event ID : 2147 Source : MSExchangeRepl Type : Error Machine : SERVER Message : There was a problem with 'ActiveNode', which is an alternate name for 'ActiveNode'. The list of aliases is now 'ActiveNode', and the alias 'was' removed from the list. The specific problem is 'CreateFile([\\ActiveNodeStorageGroupGuid$LogFile.log](///)) = 2'.
+Event ID : 2147
+Raw Event ID : 2147
+Source : MSExchangeRepl
+Type : Error
+Machine : SERVER
+Message : There was a problem with 'ActiveNode', which is an alternate name for 'ActiveNode'. The list of aliases is now 'ActiveNode', and the alias 'was' removed from the list. The specific problem is 'CreateFile(\\ActiveNodeStorageGroupGuid$LogFile.log) = 2'.
 ```
 
 ```text
-ID:       2127 Level:     Information Provider: MSExchangeRepl Machine:  SERVER Message:  The system has detected a change in the available replication networks.  The system is now using network 'ActiveNode' instead of network 'ActiveNode' for log copying from node ActiveNode.
+ID:       2127
+Level:    Information
+Provider: MSExchangeRepl
+Machine:  SERVER
+Message:  The system has detected a change in the available replication networks.  The system is now using network 'ActiveNode' instead of network 'ActiveNode' for log copying from node ActiveNode.
 ```
+
 
 Thanks a lot for JR on sharing this, check out Tim McMichael with more info on this:
 

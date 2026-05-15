@@ -20,7 +20,15 @@ Thru closely examining the endless output of entries, I've spotted an **undocume
 
 So there I was, crossing fingers,  editing the registry hoping... and BINGO! I have performed a reset to the OneDrive for Business client, and it behaved like the first time I've opened it up.
 
-Here it is, Add/Modify these two DWORD values: `[HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Groove] "FirstSyncComplete"=dword:00000000` `[HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Groove\Development] "IsResyncEnabled"=dword:00000001`
+Here it is, Add/Modify these two DWORD values: 
+
+```registry
+[HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Groove]
+"FirstSyncComplete"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Groove\Development]
+"IsResyncEnabled"=dword:00000001
+```
 
 Hope this post will help more good folks out there.
 

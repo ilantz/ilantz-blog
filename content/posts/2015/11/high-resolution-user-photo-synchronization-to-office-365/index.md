@@ -4,9 +4,9 @@ date: 2015-11-17
 categories:
 - azure-ad
 - office-365
-coverImage: fb-img.14279915541.jpg
 showTableOfContents: true
 draft: false
+coverImage: fb-img.14279915541.jpg
 ---
 
 

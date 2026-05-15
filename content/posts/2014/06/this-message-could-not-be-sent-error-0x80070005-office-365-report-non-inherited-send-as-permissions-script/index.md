@@ -27,7 +27,7 @@ Using Exchange Server Error Code Look-up ([Download Err.exe](http://www.microsof
 
 To add a SendAs permission use the Add-RecipientPermission cmdlet with Exchange Online Remote PowerShell or use the Exchange Admin Control Panel and add the Send As permission from the "Mailbox Delegation" menu.
 
-```text
+```powershell
 Add-RecipientPermission "Help Desk" -AccessRights SendAs -Trustee "Ayla Kol"
 ```
 

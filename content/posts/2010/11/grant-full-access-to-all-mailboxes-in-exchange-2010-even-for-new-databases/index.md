@@ -21,11 +21,10 @@ Since Exchange 2010 was released I always run into this request from administrat
 
 The following commands will do the trick, copy the first row separately- **Exchange 2010 only**:
 
-```text
-$user = Read-Host -Prompt:"Enter UserName to grant permissions";
-```
-
 ```powershell
+$user = Read-Host -Prompt:"Enter UserName to grant permissions";
+``
+
 $organization = Get-OrganizationConfig;` `$databasesContainer = "CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups," + $organization.DistinguishedName;` `Add-ADPermission -User:$user -AccessRights ExtendedRight -ExtendedRights Receive-As, Send-As, ms-Exch-Store-Admin -Identity:$databasesContainer;
 ```
 

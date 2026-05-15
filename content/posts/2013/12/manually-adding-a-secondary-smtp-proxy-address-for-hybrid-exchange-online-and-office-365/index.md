@@ -22,7 +22,7 @@ I've been busy with more Office 365 and Hybrid Exchange Online deployments and c
 
 While deploying an Hybrid Exchange Online setup, one of the steps the Hybrid Configuration Wizard is doing is modifying the email address policy and adding "alias@tenant.mail.onmicrosoft.com" to the relevant EAP policies. This is great although there's a good chance you have some mailboxes that are set with EmailAddressPolicyEnabled:$false
 
-I've written a function script that will help you add the additional secondary SMTP proxy address to those mailboxes easily :)
+I've written a ~~function~~ script that will help you add the additional secondary SMTP proxy address to those mailboxes easily :)
 
 Here's an example on how to use the script:
 

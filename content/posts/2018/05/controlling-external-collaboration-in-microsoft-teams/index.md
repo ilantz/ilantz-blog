@@ -7,7 +7,6 @@ categories:
 showTableOfContents: true
 description: Learn how to control external collaboration in Microsoft Teams by using
   Azure AD and Office 365 Group settings to limit who can invite guests.
-draft: false
 ---
 
 

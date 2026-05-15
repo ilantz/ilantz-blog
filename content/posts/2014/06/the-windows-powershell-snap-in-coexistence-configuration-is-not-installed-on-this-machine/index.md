@@ -15,7 +15,7 @@ draft: false
 
 To initiate a synchronization locally or remotely (if enabled) , you could run the following command for example:
 
-```text
+```powershell
 Invoke-Command -ComputerName **DirSync-Server.domain.com** -ScriptBlock {& Import-Module ADSync;Start-ADSyncSyncCycle}
 ```
 
@@ -25,7 +25,7 @@ There has been another change to the module name, it is now ADSync. and the grea
 
 To initiate a synchronization locally or remotely (if enabled) , you could run the following command for example:
 
-```text
+```powershell
 Invoke-Command -ComputerName **DirSync-Server.domain.com** -ScriptBlock {& "C:\Program Files\Microsoft Azure AD Sync\Bin\DirectorySyncClientCmd.exe"}
 ```
 

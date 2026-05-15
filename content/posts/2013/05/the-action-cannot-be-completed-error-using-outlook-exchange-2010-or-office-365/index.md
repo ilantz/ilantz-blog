@@ -19,7 +19,11 @@ Hi,
 Quick note from the field, if you are moving to Exchange Online / Office 365 you should double check your current office group-policy settings and registry for Outlook.
 {{< /lead >}}
 
-You should make sure that you **did not enable** the Closest GC setting, or configured a specific global catalog server with the DS Server registry entries under HKEY_CURRENT_USER\\Software\\Microsoft\\Exchange\\Exchange Provider
+You should make sure that you **did not enable** the Closest GC setting, or configured a specific global catalog server with the DS Server registry entries under:
+
+```registry
+HKEY_CURRENT_USER\Software\Microsoft\Exchange\Exchange Provider
+```
 
 Both registry values, errors and methods for resolution are located at:
 

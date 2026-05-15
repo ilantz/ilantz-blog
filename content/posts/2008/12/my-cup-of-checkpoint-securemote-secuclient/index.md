@@ -1,12 +1,12 @@
 ---
 title: my cup of checkpoint SecuRemote / SecuClient
 date: 2008-12-08
-slug: my-cup-of-checkpoint-securemote-secuclient
 categories:
 - misc
 - vista-7
 showTableOfContents: true
 draft: false
+slug: my-cup-of-checkpoint-securemote-secuclient
 ---
 
 

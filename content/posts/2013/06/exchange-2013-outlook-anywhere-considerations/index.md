@@ -1,12 +1,12 @@
 ---
 title: Exchange 2013 Outlook Anywhere Considerations
 date: 2013-06-29
-aliases:
-- /2013/06/29/exchange-2013-outlook-anywhere-conciderations/
 categories:
 - exchange-2013
 showTableOfContents: true
 draft: false
+aliases:
+- /2013/06/29/exchange-2013-outlook-anywhere-conciderations/
 ---
 
 

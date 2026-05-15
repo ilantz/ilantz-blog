@@ -18,7 +18,7 @@ One of the tasks is to read the list of the endpoints from the [Office 365 URLs 
 
 Most of the times, you'll just want to fetch the list of the URLs, and hand them over to your friendly networking team that would then do their magic. lucky enough PowerShell can be used to get that list easily, here's an  example:
 
-```text
+```powershell
 $endpoints = Invoke-WebRequest "https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7" | ConvertFrom-Json ; $endpoints | ?{$_.serviceArea -eq "Common" -AND $_.Required -eq "True"} | select urls -ExpandProperty Urls
 ```
 
@@ -26,7 +26,7 @@ This would request the full list of endpoints from the web service, convert it P
 
 Another example would be to pull the Optimize category:
 
-```text
+```powershell
 $endpoints = Invoke-WebRequest "https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7" | ConvertFrom-Json ; $endpoints | ?{$_.category -eq "Optimize" }
 ```
 

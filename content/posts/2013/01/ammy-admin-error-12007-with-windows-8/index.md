@@ -1,13 +1,13 @@
 ---
 title: Ammy Admin Error 12007 with Windows 8
 date: 2013-01-29
-aliases:
-- /2013/01/29/549/
 categories:
 - misc
 - windows-8
 showTableOfContents: true
 draft: false
+aliases:
+- /2013/01/29/549/
 ---
 
 

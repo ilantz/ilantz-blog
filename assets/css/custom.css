@@ -1,9 +1,9 @@
 :root {
   /* The official Slate-50 background */
-  --color-neutral-50: 248, 250, 252; 
-  
+  --color-neutral-50: 248, 250, 252;
+
   /* Setting the header tint to match the background (removes the blue tint) */
-  --color-primary-200: 248, 250, 252; 
+  --color-primary-200: 248, 250, 252;
 }
 
 /* Applying the background precisely */
@@ -14,4 +14,29 @@ body {
 /* Ensuring dark mode remains unaffected */
 html.dark body {
   background-color: #111827 !important;
+}
+/* Strike-out style for code blocks and text */
+.strike-out, .strike-out * {
+  text-decoration: line-through !important;
+}
+/* Enable word-wrap in code blocks instead of horizontal scrolling */
+/* Enable word-wrap in code blocks when toggled */
+.wrap-code, .wrap-code pre, .wrap-code code, .wrap-code pre *, .wrap-code code * {
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  word-break: break-all !important;
+  flex-wrap: wrap !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+
+.wrap-code, .wrap-code .highlight, .wrap-code .highlight-wrapper {
+  overflow-x: hidden !important;
+}
+/* Fix Chroma lines explicitly to allow wrapping */
+.chroma .line, .chroma .cl {
+  display: inline !important;
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
 }

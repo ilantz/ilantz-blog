@@ -23,13 +23,18 @@ The MSILOG indeed showed that the setup was looking for the RTM language files i
 
 So, I've turned to manually remove any references to the Client / Server language packs on the server, this included removing a whole bunch of registry keys:
 
-```text
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v14\Language Packs\ <-- the whole KEY HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\  <-- Whatever "Microsoft Exchange ** Language Pack" I found HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\  <-- Whatever "Microsoft Exchange ** Language Pack" I found HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products  <-- Whatever "Microsoft Exchange ** Language Pack" I found
-```
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v14\Language Packs\ <-- the whole KEY 
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\  <-- Whatever "Microsoft Exchange ** Language Pack" I found
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\  <-- Whatever "Microsoft Exchange ** Language Pack" I found 
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products  <-- Whatever "Microsoft Exchange ** Language Pack" I found
 
 Following this brutal way, I've stumbled upon a way to [Applying Small Updates by Reinstalling the Product](https://msdn.microsoft.com/en-us/library/aa367575\(v=vs.85\).aspx) this actually achieves what the installer wants:
 
-```text
+```cmd
 msiexec /i Server<or>ClientLanguagePack.msi REINSTALLMODE=vomus
 ```
 
@@ -38,7 +43,18 @@ And it works ! Now, I guess that with a script this would have been much quicker
 \*\* edit the $setuplocation variable for your directory of the servicepack.
 
 ```powershell
-$setupLocation = "c:\sp3" $allDirs = dir $setupLocation -Directory foreach ($dir in $allDirs) { if (Test-Path ($dir.FullName + "\clientlanguagepack.msi")) {Write-Host "Installing" $dir.name ; Start-Process -FilePath msiexec -ArgumentList /i, ($dir.FullName + "\clientlanguagepack.msi"), "REINSTALLMODE=vomus" -Wait } if (Test-Path ($dir.FullName + "\serverlanguagepack.msi")) {Write-Host "Installing" $dir.name ; Start-Process -FilePath msiexec -ArgumentList /i, ($dir.FullName + "\serverlanguagepack.msi"), "REINSTALLMODE=vomus" -Wait } }
+$setupLocation = "c:\sp3" 
+$allDirs = dir $setupLocation -Directory 
+foreach ($dir in $allDirs) { 
+    if (Test-Path ($dir.FullName + "\clientlanguagepack.msi")) {
+        Write-Host "Installing" $dir.name ; 
+        Start-Process -FilePath msiexec -ArgumentList /i, ($dir.FullName + "\clientlanguagepack.msi"), "REINSTALLMODE=vomus" -Wait 
+    } 
+    if (Test-Path ($dir.FullName + "\serverlanguagepack.msi")) {
+        Write-Host "Installing" $dir.name ; 
+        Start-Process -FilePath msiexec -ArgumentList /i, ($dir.FullName + "\serverlanguagepack.msi"), "REINSTALLMODE=vomus" -Wait 
+    } 
+}
 ```
 
 * * *

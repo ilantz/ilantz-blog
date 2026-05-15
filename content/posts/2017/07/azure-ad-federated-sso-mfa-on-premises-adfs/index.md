@@ -9,11 +9,9 @@ draft: false
 ---
 
 
-### Updates:
+Updates:
 
-{{< lead >}}
-2017-07-27 - I've included another important note about adding the "Authentication Methods References" claim
-{{< /lead >}}
+*2017-07-27* - I've included another important note about adding the "Authentication Methods References" claim
 
 * * *
 

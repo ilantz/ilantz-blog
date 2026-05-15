@@ -1,0 +1,71 @@
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Only proceed if there are actually code blocks on this specific page
+    const codeBlocks = document.querySelectorAll('.highlight-wrapper, pre.chroma');
+    if (codeBlocks.length === 0) return;
+
+    // Wrap ON: Bold returning arrow (wrapped in native span structure for alignment)
+    const wrapOnIcon = `<span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 10 4 15 9 20"/><path d="M20 4v7a4 4 0 0 1-4 4H4"/></svg></span>`;
+    
+    // Wrap OFF: Native Blowfish code icon
+    const wrapOffIcon = `{{ partial "icon.html" "code" }}`;
+
+    const labelWrapOn = "Switch text-wrap off";
+    const labelWrapOff = "Switch text-wrap on";
+
+    // Find the appearance switchers (Desktop and Mobile)
+    const switchers = [
+        document.getElementById('appearance-switcher'),
+        document.getElementById('appearance-switcher-mobile')
+    ];
+
+    let isWrapped = true;
+
+    // Apply default wrapping immediately on load
+    codeBlocks.forEach(block => block.classList.add('wrap-code'));
+
+    const updateWrapUI = () => {
+        document.querySelectorAll('.global-wrap-toggle').forEach(btn => {
+            btn.innerHTML = isWrapped ? wrapOnIcon : wrapOffIcon;
+            btn.setAttribute('aria-label', isWrapped ? labelWrapOn : labelWrapOff);
+            btn.setAttribute('title', isWrapped ? labelWrapOn : labelWrapOff);
+        });
+    };
+
+    switchers.forEach(switcher => {
+        if (!switcher) return;
+
+        // Create the global toggle button
+        const wrapBtn = document.createElement('button');
+        
+        // Inherit exact native styling
+        wrapBtn.className = switcher.className;
+        wrapBtn.classList.add('global-wrap-toggle');
+        wrapBtn.style.transition = 'all 0.2s';
+        
+        wrapBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            isWrapped = !isWrapped;
+            
+            updateWrapUI();
+
+            // Toggle wrapping class
+            codeBlocks.forEach(block => {
+                if (isWrapped) {
+                    block.classList.add('wrap-code');
+                } else {
+                    block.classList.remove('wrap-code');
+                }
+            });
+        });
+
+        // The desktop switcher is wrapped in a div, the mobile one is not.
+        // We want to insert our button at the top level of the flex container so it inherits the native flex gaps!
+        const targetNode = switcher.id === 'appearance-switcher' ? switcher.parentNode : switcher;
+        targetNode.parentNode.insertBefore(wrapBtn, targetNode.nextSibling);
+    });
+
+    // Set initial UI state
+    updateWrapUI();
+});
+</script>

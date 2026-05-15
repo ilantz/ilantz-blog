@@ -23,7 +23,7 @@ Anyhow:
 2. Locate the TraceSourceLine with the following key: OnPremisesExchangeConnectorService
 3. Change the SourceLevel node value from Warning ActivityTracing (the default) to Verbose ActivityTracing.
 
-```text
+```xml
 <TraceSourceLine>
   <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key>
   <Value xsi:type="TraceSource">

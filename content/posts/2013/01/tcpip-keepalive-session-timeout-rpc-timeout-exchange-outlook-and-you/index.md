@@ -1,7 +1,6 @@
 ---
 title: TCP/IP KeepAlive, Session Timeout, RPC Timeout, Exchange, Outlook and you
 date: 2013-01-14
-slug: tcpip-keepalive-session-timeout-rpc-timeout-exchange-outlook-and-you
 categories:
 - exchange-2003
 - exchange-2007
@@ -12,6 +11,7 @@ categories:
 - outlook-mapi
 showTableOfContents: true
 draft: false
+slug: tcpip-keepalive-session-timeout-rpc-timeout-exchange-outlook-and-you
 ---
 
 
@@ -47,7 +47,14 @@ Client<>Server connections in general remains active while data "flows" , mails 
 
 Here's my "how-to" suggestion:
 
-- Configure the RPC timeout on Exchange servers to make sure that components which use RPC will trigger a keep alive signal within the time frame you would expect `reg add "HKLM\Software\Policies\Microsoft\Windows NT\RPC" -v "MinimumConnectionTimeout" -t REG_DWORD -d 120`
+- ~~Configure the RPC timeout on Exchange servers to make sure that components which use RPC will trigger a keep alive signal within the time frame you would expect:~~
+
+{{< strike >}}
+```cmd
+reg add "HKLM\Software\Policies\Microsoft\Windows NT\RPC" -v "MinimumConnectionTimeout" -t REG_DWORD -d 120
+```
+{{< /strike >}}
+
 - Consider modifying the server TCP/IP KeepAlive to reduce the chance of "IDLE" connections being terminated - (Default is Two hours - **The recommended value is 30 minutes , and no less then 15 minutes**) - this controls the OS TCP behavior with idle connections, could greatly improve responsiveness and scalability - [http://support.microsoft.com/kb/314053/EN-US](http://support.microsoft.com/kb/314053/EN-US)
 - Make sure that you are aware of any router, firewall or any other network device that is placed between your clients and your servers. Once you do - note their session timeout, session TTL or session ageing setting for the relevant protocol and port! (this could be tricky, so do not treat this lightly)
 
