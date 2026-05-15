@@ -217,7 +217,17 @@ def sanitize_content(content, args):
             content = '\n'.join(lines)
 
     if args.format_logs:
-        # 7. Fence Technical Logs and Registry Keys (only if not already in a code block)
+        # 7. Upgrade single-backtick snippets to fenced blocks if they look technical
+        def upgrade_inline_code(match):
+            code = match.group(1)
+            # If it's a registry path, PowerShell command, or just a very long line
+            if re.search(r'HKEY_|HKLM\\|HKCU\\|\$\w+|[A-Z][a-z]+-[A-Z][a-z]+|REINSTALLMODE=', code, re.IGNORECASE) or len(code) > 80:
+                lang = detect_code_language(code)
+                return f'\n\n```{lang}\n{code.strip()}\n```\n\n'
+            return match.group(0)
+        content = re.sub(r'`([^`\n]+)`', upgrade_inline_code, content)
+
+        # 8. Fence Technical Logs and Registry Keys (only if not already in a code block)
         parts = re.split(r'(```[\s\S]*?```|`[^`\n]+`)', content)
         for i in range(len(parts)):
             if not parts[i].startswith('`'):
