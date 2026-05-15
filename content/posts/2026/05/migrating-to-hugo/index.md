@@ -1,6 +1,6 @@
 ---
 title: "Migrating from WordPress to Hugo"
-date: 2026-05-04
+date: 2026-05-15
 slug: wordpress-to-hugo-migration
 description: "A deep dive into a 15-year-old WordPress blog migration to Hugo using the Blowfish theme and using Cloudflare Pages for hosting."
 summary: "After 7 years of inactivity, I moved my legacy blog to a modern static stack. Here is how I handled 100+ posts, fixed SSG build crashes, and automated the cleanup."
